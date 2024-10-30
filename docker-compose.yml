@@ -16,7 +16,7 @@ services:
     build: .
     environment:
       #FLASK_ENV: production
-      DATABASE_NAME: "/app/data/app.db"
+      - DATABASE_NAME="/app/data/app.db"
     volumes:
       - app-data:/app/data
     command: ["python","migrations.py"]
