@@ -23,5 +23,4 @@ services:
 
 volumes:
   app-data:
-    driver: local
 
