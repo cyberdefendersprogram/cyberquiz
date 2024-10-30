@@ -3,13 +3,11 @@ services:
   app:
     build: .
     ports:
-      - "8000:8000"
+      - "6000:6000"
     depends_on:
       - migrate
     environment:
       DATABASE_NAME: "/app/data/app.db"  # Use Docker volume path for persistence
-      MAIL_PASSWORD: '2640f95cde9a4664aa940a42'
-      SECRET_KEY: '2640f95cde9a4664aa940a42'
     volumes:
       - app-data:/app/data  # Mount the volume for database persistence
 
