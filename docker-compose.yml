@@ -8,7 +8,9 @@ services:
       - migrate
     environment:
       PORT: $PORT
-      DATABASE_NAME: "/app/data/app.db"  # Use Docker volume path for persistence
+      MAIL_PASSWORD: $MAIL_PASSWORD
+      SECRET_KEY: $SECRET_KEY
+      DATABASE_NAME: $DATABASE_NAME  # Use Docker volume path for persistence
     volumes:
       - app-data:/app/data  # Mount the volume for database persistence
     tty: true
