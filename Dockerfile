@@ -28,8 +28,8 @@ RUN poetry install --no-root --no-dev
 COPY . /app
 
 # Expose the port Flask will run on
-EXPOSE 8000
+EXPOSE ${PORT}
 
 # Run Gunicorn with Poetry for production
-CMD ["poetry", "run", "gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "app:app"]
+CMD ["poetry", "run", "gunicorn", "-w", "4", "-b", "0.0.0.0:${PORT}", "app:app"]
 

@@ -3,10 +3,11 @@ services:
   app:
     build: .
     ports:
-      - "6000:6000"
+      - "${PORT}:${PORT}"
     depends_on:
       - migrate
     environment:
+      PORT: 6000
       DATABASE_NAME: "/app/data/app.db"  # Use Docker volume path for persistence
     volumes:
       - app-data:/app/data  # Mount the volume for database persistence
