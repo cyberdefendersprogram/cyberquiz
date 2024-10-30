@@ -7,6 +7,7 @@ services:
     depends_on:
       - migrate
     environment:
+      - PORT=$PORT
       - DATABASE_NAME='/app/data/app.db'  # Use Docker volume path for persistence
     volumes:
       - app-data:/app/data  # Mount the volume for database persistence
