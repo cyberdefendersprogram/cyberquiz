@@ -1,0 +1,28 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - migrate
+    environment:
+      DATABASE_NAME: "/app/data/app.db"  # Use Docker volume path for persistence
+      MAIL_PASSWORD: '2640f95cde9a4664aa940a42'
+      SECRET_KEY: '2640f95cde9a4664aa940a42'
+    volumes:
+      - app-data:/app/data  # Mount the volume for database persistence
+
+  migrate:
+    build: .
+    environment:
+      #FLASK_ENV: production
+      DATABASE_NAME: "/app/data/app.db"
+    volumes:
+      - app-data:/app/data
+    command: ["python","migrations.py"]
+
+volumes:
+  app-data:
+    driver: local
+

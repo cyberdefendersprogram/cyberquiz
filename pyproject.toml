@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cyberquiz"
+version = "0.1.0"
+description = "quiz application"
+authors = ["Vaibhav Bhandari <vaibhavb@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^3.0.3"
+Flask-Mail = "^0.10.0"
+itsdangerous = "^2.2.0"
+PyYAML = "^6.0.2"
+jinja2 = "^3.1.4"
+python-dotenv = "^1.0.1"
+gunicorn = "^23.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

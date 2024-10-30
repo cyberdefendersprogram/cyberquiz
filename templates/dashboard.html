@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Your Quiz Results</h2>
+    <ul class="space-y-4">
+        {% for result in quiz_results %}
+            <li class="bg-gray-100 p-4 rounded-lg shadow">
+                <p><strong>{{ result['name'] }}</strong></p>
+                <p>Score: {{ result['score'] }}/50</p>
+                <p>Taken on: {{ result['timestamp'] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="mt-6 text-center">
+        <a href="{{ url_for('select_quiz') }}" class="inline-block bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600">Take Another Quiz</a>
+    </div>
+{% endblock %}
+

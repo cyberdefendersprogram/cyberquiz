@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to Quiz App{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome to the Quiz App!</h2>
+    <p class="text-gray-600 mb-6">
+        Test your knowledge on various topics with our engaging quizzes. Track your scores, and improve with each quiz. Start by logging in or selecting a quiz to explore.
+    </p>
+    
+    <!-- Tailored experience based on login status -->
+    <div class="flex justify-center space-x-4">
+        {% if session.email %}
+            <!-- Button for logged-in users -->
+            <a href="{{ url_for('dashboard') }}" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">
+                Go to Dashboard
+            </a>
+            <a href="{{ url_for('select_quiz') }}" class="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600">
+                Take a Quiz
+            </a>
+        {% else %}
+            <!-- Buttons for new users -->
+            <a href="{{ url_for('login') }}" class="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700">
+                Log In
+            </a>
+            <a href="{{ url_for('select_quiz') }}" class="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600">
+                Explore Quizzes
+            </a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+

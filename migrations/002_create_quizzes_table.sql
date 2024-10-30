@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS quizzes (
+    id INTEGER PRIMARY KEY,
+    name TEXT UNIQUE NOT NULL
+);
+
