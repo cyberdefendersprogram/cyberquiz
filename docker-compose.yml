@@ -7,16 +7,17 @@ services:
     depends_on:
       - migrate
     environment:
-      - PORT=$PORT
-      - DATABASE_NAME="/app/data/app.db"  # Use Docker volume path for persistence
+      PORT: $PORT
+      DATABASE_NAME: "/app/data/app.db"  # Use Docker volume path for persistence
     volumes:
       - app-data:/app/data  # Mount the volume for database persistence
+    tty: true
+    stdin_open: true
 
   migrate:
     build: .
     environment:
-      #FLASK_ENV: production
-      - DATABASE_NAME="/app/data/app.db"
+      DATABASE_NAME: "/app/data/app.db"
     volumes:
       - app-data:/app/data
     command: ["python","migrations.py"]

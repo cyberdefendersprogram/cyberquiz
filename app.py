@@ -25,7 +25,7 @@ mail = Mail(app)
 serializer = URLSafeTimedSerializer(app.secret_key)
 
 def get_db():
-    print(f"Opening file {DATABASE}")
+    app.logger.info(f"Opening file {DATABASE}")
     conn = sqlite3.connect(DATABASE)
     conn.row_factory = sqlite3.Row
     return conn

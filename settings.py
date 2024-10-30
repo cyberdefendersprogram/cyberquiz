@@ -2,7 +2,7 @@
 import os
 
 # Database configuration
-DATABASE_NAME = os.getenv('DATABASE_NAME', '/app/data/app.db')
+DATABASE_NAME = os.getenv('DATABASE_NAME', 'app.db')
 
 # Email configuration
 MAIL_SERVER = os.getenv('MAIL_SERVER', 'smtp.forwardemail.net')  # Default is optional
