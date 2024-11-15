@@ -1,0 +1,42 @@
+name: Wireshark Basics
+questions:
+  - question: "What does the Wireshark tool primarily do?"
+    options:
+      - "Analyze network traffic"
+      - "Scan for open ports"
+      - "Encrypt network traffic"
+      - "Detect malware"
+    answer: "Analyze network traffic"
+
+  - question: "Which protocol is used to resolve domain names to IP addresses, which Wireshark can capture?"
+    options:
+      - "HTTP"
+      - "DNS"
+      - "FTP"
+      - "SNMP"
+    answer: "DNS"
+
+  - question: "In Wireshark, what does the filter 'tcp.port == 80' do?"
+    options:
+      - "Filters packets on port 80"
+      - "Filters packets containing TCP data"
+      - "Filters packets with source port 80 only"
+      - "Shows all TCP packets except on port 80"
+    answer: "Filters packets on port 80"
+
+  - question: "Which file format is commonly used to save captured packets in Wireshark?"
+    options:
+      - ".pcap"
+      - ".txt"
+      - ".csv"
+      - ".log"
+    answer: ".pcap"
+
+  - question: "What color is used by default in Wireshark to highlight TCP packets with retransmissions?"
+    options:
+      - "Green"
+      - "Blue"
+      - "Black"
+      - "Red"
+    answer: "Black"
+
