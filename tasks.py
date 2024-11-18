@@ -8,7 +8,7 @@ from google.oauth2.service_account import Credentials
 import settings
 
 # Huey instance with SQLite backend
-huey = SqliteHuey(filename=settings.HUEYSQLITE)
+huey = SqliteHuey(filename=settings.HUEY_SQLITE)
 
 # Google Drive API Configuration
 SCOPES = ['https://www.googleapis.com/auth/drive.file']

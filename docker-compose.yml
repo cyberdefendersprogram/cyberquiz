@@ -8,6 +8,8 @@ services:
       MAIL_PASSWORD: $MAIL_PASSWORD
       SECRET_KEY: $SECRET_KEY
       DATABASE_NAME: $DATABASE_NAME  # Use Docker volume path for persistence
+      GOOGLE_SERVICE_ACCOUNT_JSON: $GOOGLE_SERVICE_ACCOUNT_JSON
+      GOOGLE_DRIVE_FOLDER_ID: $GOOGLE_DRIVE_FOLDER_ID
     volumes:
       - app-data:/app/data  # Mount the volume for database persistence
     tty: true
