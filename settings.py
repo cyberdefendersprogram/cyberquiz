@@ -15,3 +15,12 @@ MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER', 'vaibhavb@cyberdefendersp
 # Secret key (you might want to generate a unique key for production)
 SECRET_KEY = os.getenv('SECRET_KEY', 'supersecretkey')
 
+# Huey instance with SQLite backend
+HUEY_SQLITE = os.getenv('HUEY_SQLITE', 'data/huey.sqlite')
+
+# Google Drive API Configuration
+GOOGLE_SERVICE_ACCOUNT_JSON = os.getenv('GOOGLE_SERVICE_ACCOUNT_JSON')
+FOLDER_ID = os.getenv('GOOGLE_DRIVE_FOLDER_ID')  # Folder ID where backups are stored
+LOCAL_DB_PATH = os.getenv('LOCAL_DB_PATH', '/app/data/app.db')  # SQLite database path
+LOCAL_RESTORE_PATH = os.getenv('LOCAL_RESTORE_PATH', '/app/data/restored.db')  # Restored database path
+

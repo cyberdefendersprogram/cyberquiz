@@ -1,11 +1,8 @@
-version: '3'
 services:
   app:
     build: .
     ports:
       - $PORT:$PORT
-    depends_on:
-      - migrate
     environment:
       PORT: $PORT
       MAIL_PASSWORD: $MAIL_PASSWORD
@@ -15,14 +12,6 @@ services:
       - app-data:/app/data  # Mount the volume for database persistence
     tty: true
     stdin_open: true
-
-  migrate:
-    build: .
-    environment:
-      DATABASE_NAME: "/app/data/app.db"
-    volumes:
-      - app-data:/app/data
-    command: ["python","migrations.py"]
 
 volumes:
   app-data:

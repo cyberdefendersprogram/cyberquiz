@@ -1,4 +1,5 @@
-from flask import Flask, request, redirect, url_for, render_template, session, flash
+from flask import Flask, request, redirect, url_for, render_template, session, flash, jsonify
+from tasks import backup_to_drive, restore_from_drive
 from flask_mail import Mail, Message
 from itsdangerous import URLSafeTimedSerializer
 import sqlite3
@@ -138,6 +139,18 @@ def page_not_found(e):
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template("500.html"), 500
+
+@app.route('/backup', methods=['POST'])
+def trigger_backup():
+    """API endpoint to trigger a backup task."""
+    backup_to_drive()
+    return jsonify({'status': 'Backup task triggered successfully!'})
+
+@app.route('/restore', methods=['POST'])
+def trigger_restore():
+    """API endpoint to trigger a restore task."""
+    restore_from_drive()
+    return jsonify({'status': 'Restore task triggered successfully!'})
 
 # Configure logging for production
 if not app.debug:  # Only configure logging if in production mode
