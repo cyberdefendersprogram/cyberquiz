@@ -1,0 +1,42 @@
+name: "CIS 55 - Class 1: Introduction to Cybersecurity"
+questions:
+  - question: "What are the three core principles of the CIA triad in cybersecurity?"
+    options:
+      - "A) Confidentiality, Integrity, Availability"
+      - "B) Control, Identification, Authentication"
+      - "C) Compliance, Investigation, Access"
+      - "D) Cybersecurity, Intelligence, Analysis"
+    answer: "A"
+
+  - question: "Which phase of penetration testing involves gathering as much information about the target as possible?"
+    options:
+      - "A) Exploitation"
+      - "B) Scanning"
+      - "C) Reconnaissance"
+      - "D) Reporting"
+    answer: "C"
+
+  - question: "Which tool is commonly used for network and web application vulnerability scanning?"
+    options:
+      - "A) Metasploit"
+      - "B) Nessus"
+      - "C) Wireshark"
+      - "D) John the Ripper"
+    answer: "B"
+
+  - question: "What type of penetration testing simulates an attacker with no prior knowledge of the target?"
+    options:
+      - "A) Internal Penetration Testing"
+      - "B) Targeted Testing"
+      - "C) Blind Penetration Testing"
+      - "D) External Penetration Testing"
+    answer: "C"
+
+  - question: "Which of the following is NOT a common attack vector?"
+    options:
+      - "A) Social Engineering"
+      - "B) Brute Force Attacks"
+      - "C) Privileged Access Misuse"
+      - "D) Intrusion Detection Systems"
+    answer: "D"
+

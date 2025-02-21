@@ -42,6 +42,23 @@ def send_email(to_email, subject, body):
 @app.route('/')
 def index():
     return render_template('index.html')
+:q
+@app.route('/admin', methods=['GET'])
+def admin_page():
+    if 'email' not in session or session['email'] != 'vaibhavb@gmail.com':
+        flash("Unauthorized access.", "danger")
+        return redirect(url_for('index'))
+
+    conn = get_db()
+    tables = conn.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()
+    tables = [table['name'] for table in tables]
+
+    db_data = {}
+    for table in tables:
+        data = conn.execute(f"SELECT * FROM {table}").fetchall()
+        db_data[table] = [dict(row) for row in data]
+
+    return render_template('admin.html', db_data=db_data)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
