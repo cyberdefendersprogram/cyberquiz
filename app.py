@@ -42,7 +42,7 @@ def send_email(to_email, subject, body):
 @app.route('/')
 def index():
     return render_template('index.html')
-:q
+
 @app.route('/admin', methods=['GET'])
 def admin_page():
     if 'email' not in session or session['email'] != 'vaibhavb@gmail.com':
