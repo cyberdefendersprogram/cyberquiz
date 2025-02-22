@@ -187,6 +187,24 @@ def trigger_restore():
         app.logger.error(f"Restore failed: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
+def run_custom_query(query):
+    """Execute a custom SQL query safely."""
+    try:
+        conn = get_db()
+        # Only allow SELECT queries for safety
+        if not query.lower().strip().startswith('select'):
+            raise ValueError("Only SELECT queries are allowed")
+            
+        results = conn.execute(query).fetchall()
+        # Convert results to list of dicts
+        columns = results[0].keys() if results else []
+        data = [dict(row) for row in results]
+        return {"columns": columns, "data": data}
+        
+    except Exception as e:
+        app.logger.error(f"Query execution failed: {str(e)}")
+        raise
+    
 @app.route('/execute_query', methods=['POST'])
 def execute_query():
     """API endpoint to execute custom SQL queries."""
