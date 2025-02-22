@@ -1,0 +1,41 @@
+name: "CIS 55 - Class 4: OSINT Tools and Uber Hack"
+questions:
+  - question: "What was the initial attack vector in the 2022 Uber hack?"
+    options:
+      - "A) SQL injection"
+      - "B) Social engineering and MFA fatigue"
+      - "C) Zero-day vulnerability"
+      - "D) Brute force attack"
+    answer: "B"
+
+  - question: "What critical system did the Uber hacker compromise that contained passwords for all services?"
+    options:
+      - "A) OneLogin"
+      - "B) AWS IAM"
+      - "C) Thycotic"
+      - "D) Google Workspace"
+    answer: "C"
+
+  - question: "Which of the following is NOT one of the primary functions of Maltego?"
+    options:
+      - "A) Graphical link analysis"
+      - "B) Real-time data mining"
+      - "C) Network penetration"
+      - "D) Information gathering"
+    answer: "C"
+
+  - question: "What makes Shodan different from traditional search engines?"
+    options:
+      - "A) It scans webpages for keywords"
+      - "B) It scans the internet for device and service banners"
+      - "C) It only searches social media"
+      - "D) It focuses on image recognition"
+    answer: "B"
+
+  - question: "Which of these is NOT one of Censys's three main data views?"
+    options:
+      - "A) IPv4 Hosts"
+      - "B) Top million websites"
+      - "C) Network protocols"
+      - "D) Certificates"
+    answer: "C"

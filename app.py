@@ -160,15 +160,49 @@ def internal_server_error(e):
 @app.route('/backup', methods=['POST'])
 def trigger_backup():
     """API endpoint to trigger a backup task."""
-    backup_to_drive()
-    return jsonify({'status': 'Backup task triggered successfully!'})
+    try:
+        if 'email' not in session or session['email'] != 'vaibhavb@gmail.com':
+            return jsonify({'error': 'Unauthorized access'}), 403
+            
+        backup_to_drive()
+        return jsonify({'status': 'Backup completed successfully!'})
+    except Exception as e:
+        app.logger.error(f"Backup failed: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/restore', methods=['POST'])
 def trigger_restore():
     """API endpoint to trigger a restore task."""
-    restore_from_drive()
-    return jsonify({'status': 'Restore task triggered successfully!'})
+    try:
+        if 'email' not in session or session['email'] != 'vaibhavb@gmail.com':
+            return jsonify({'error': 'Unauthorized access'}), 403
+            
+        file_id = request.json.get('fileId')
+        if not file_id:
+            return jsonify({'error': 'File ID is required'}), 400
+            
+        restore_from_drive(file_id)
+        return jsonify({'status': 'Restore completed successfully!'})
+    except Exception as e:
+        app.logger.error(f"Restore failed: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
+@app.route('/execute_query', methods=['POST'])
+def execute_query():
+    """API endpoint to execute custom SQL queries."""
+    try:
+        if 'email' not in session or session['email'] != 'vaibhavb@gmail.com':
+            return jsonify({'error': 'Unauthorized access'}), 403
+            
+        query = request.json.get('query')
+        if not query:
+            return jsonify({'error': 'Query is required'}), 400
+            
+        results = run_custom_query(query)
+        return jsonify(results)
+    except Exception as e:
+        app.logger.error(f"Query execution failed: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 # Configure logging for production
 if not app.debug:  # Only configure logging if in production mode
     if "gunicorn" in logging.root.manager.loggerDict:
