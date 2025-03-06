@@ -142,6 +142,37 @@ def dashboard():
     ''', (user['id'],)).fetchall()
     return render_template('dashboard.html', quiz_results=quiz_results)
 
+@app.route('/update_account', methods=['GET', 'POST'])
+def update_account():
+    if 'email' not in session:
+        flash("You need to log in first.", "warning")
+        return redirect(url_for('login'))
+
+    conn = get_db()
+    user = conn.execute('SELECT * FROM users WHERE email = ?', (session['email'],)).fetchone()
+    if not user:
+        flash("User not found.", "danger")
+        return redirect(url_for('select_quiz'))
+
+    if request.method == 'POST':
+        student_id = request.form.get('student_id')
+        if student_id:
+            try:
+                conn.execute('UPDATE users SET student_id = ? WHERE id = ?', (student_id, user['id']))
+                conn.commit()
+                flash("Account updated successfully!", "success")
+            except Exception as e:
+                flash(f"Error updating account: {e}", "danger")
+        else:
+            flash("Student ID is required.", "warning")
+
+    return render_template('update_account.html', user=user)
+
+@app.context_processor
+def inject_user():
+    is_admin = session.get('email') == 'vaibhavb@gmail.com' if 'email' in session else False
+    return dict(is_admin=is_admin)
+
 @app.route('/logout')
 def logout():
     session.pop('email', None)
@@ -221,6 +252,8 @@ def execute_query():
     except Exception as e:
         app.logger.error(f"Query execution failed: {str(e)}")
         return jsonify({'error': str(e)}), 500
+
+
 # Configure logging for production
 if not app.debug:  # Only configure logging if in production mode
     if "gunicorn" in logging.root.manager.loggerDict:
