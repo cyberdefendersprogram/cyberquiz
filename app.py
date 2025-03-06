@@ -44,7 +44,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/admin', methods=['GET'])
-def admin_page():
+def admin():
     if 'email' not in session or session['email'] != 'vaibhavb@gmail.com':
         flash("Unauthorized access.", "danger")
         return redirect(url_for('index'))
@@ -171,7 +171,12 @@ def update_account():
 @app.context_processor
 def inject_user():
     is_admin = session.get('email') == 'vaibhavb@gmail.com' if 'email' in session else False
-    return dict(is_admin=is_admin)
+    # Fetch the current user from the database if logged in
+    current_user = None
+    if 'email' in session:
+        conn = get_db()
+        current_user = conn.execute('SELECT * FROM users WHERE email = ?', (session['email'],)).fetchone()
+    return dict(is_admin=is_admin, current_user=current_user)
 
 @app.route('/logout')
 def logout():

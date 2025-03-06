@@ -17,7 +17,8 @@
                 {% if is_admin %}
                 <a href="{{ url_for('admin') }}">Admin</a>
                 {% endif %}
-                <a href="{{ url_for('logout') }}" class="hover:underline">Logout</a>
+                <a href="{{ url_for('update_account') }}" class="mr-4 hover:underline">Update</a>
+                <a href="{{ url_for('logout') }}" class="mr-4 hover:underline">Logout</a>
             </nav>
         </div>
     </header>
