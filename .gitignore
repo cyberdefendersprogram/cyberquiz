@@ -2,3 +2,4 @@ app.db
 .env
 .env.*
 data/*
+.local/
