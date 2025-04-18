@@ -117,6 +117,7 @@ def submit_quiz(quiz_id):
 
     score = 0
     questions = conn.execute('SELECT * FROM quiz_questions WHERE quiz_id = ?', (quiz_id,)).fetchall()
+    num_questions = len(questions)
     for question in questions:
         user_answer = request.form.get(f'question_{question["id"]}')
         if user_answer == question["correct_answer"]:
@@ -124,7 +125,7 @@ def submit_quiz(quiz_id):
 
     conn.execute('INSERT INTO quiz_results (user_id, quiz_id, score) VALUES (?, ?, ?)', (user["id"], quiz_id, score))
     conn.commit()
-    flash(f"Quiz completed! Your score: {score}/50", "success")
+    flash(f"Quiz completed! Your score: {score}/{num_questions * 10}", "success")
     return redirect(url_for('dashboard'))
 
 @app.route('/dashboard')
