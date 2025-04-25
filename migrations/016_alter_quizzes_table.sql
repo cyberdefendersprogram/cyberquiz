@@ -1,0 +1,2 @@
+ALTER TABLE quizzes ADD COLUMN class_name TEXT;
+ALTER TABLE quizzes ADD COLUMN total_questions INTEGER DEFAULT 0;
