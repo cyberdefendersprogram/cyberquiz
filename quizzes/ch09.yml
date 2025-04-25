@@ -56,3 +56,17 @@ questions:
       - "C) Dictionary attack"
       - "D) Steganography"
     answer: "C"
+  - question: "What type of attack uses every possible letter, number, and character to guess a password?"
+    options:
+      - "A) Dictionary attack"
+      - "B) Rainbow table attack"
+      - "C) Brute-force attack"
+      - "D) Salting attack"
+    answer: "C"
+  - question: "What is a file containing hash values for every possible password called?"
+    options:
+      - "A) Dictionary"
+      - "B) Rainbow table"
+      - "C) Key escrow"
+      - "D) Hash index"
+    answer: "B"
