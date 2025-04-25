@@ -95,8 +95,18 @@ def login_with_token(token):
 @app.route('/select_quiz', methods=['GET'])
 def select_quiz():
     conn = get_db()
-    quizzes = conn.execute('SELECT * FROM quizzes').fetchall()
-    return render_template('quiz_selection.html', quizzes=quizzes)
+    # Fetch all quizzes and organize them by class
+    quizzes = conn.execute('SELECT * FROM quizzes ORDER BY class_name, name').fetchall()
+    
+    # Group quizzes by class name
+    classes = {}
+    for quiz in quizzes:
+        class_name = quiz['class_name'] or 'Other'
+        if class_name not in classes:
+            classes[class_name] = []
+        classes[class_name].append(quiz)
+    
+    return render_template('quiz_selection.html', classes=classes)
 
 @app.route('/quiz/<int:quiz_id>', methods=['GET'])
 def quiz(quiz_id):
@@ -136,12 +146,23 @@ def dashboard():
     conn = get_db()
     user = conn.execute('SELECT * FROM users WHERE email = ?', (session['email'],)).fetchone()
     quiz_results = conn.execute('''
-        SELECT quizzes.name, quiz_results.score, quiz_results.timestamp
+        SELECT quizzes.name, quiz_results.score, quiz_results.timestamp, 
+               quizzes.total_questions, quizzes.class_name
         FROM quiz_results
         JOIN quizzes ON quiz_results.quiz_id = quizzes.id
         WHERE quiz_results.user_id = ?
+        ORDER BY quiz_results.timestamp DESC
     ''', (user['id'],)).fetchall()
-    return render_template('dashboard.html', quiz_results=quiz_results)
+    
+    # Group results by class
+    classes = {}
+    for result in quiz_results:
+        class_name = result['class_name'] or 'Other'
+        if class_name not in classes:
+            classes[class_name] = []
+        classes[class_name].append(result)
+    
+    return render_template('dashboard.html', quiz_results=quiz_results, classes=classes)
 
 @app.route('/update_account', methods=['GET', 'POST'])
 def update_account():
