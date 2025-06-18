@@ -54,9 +54,15 @@ def admin():
     tables = [table['name'] for table in tables]
 
     db_data = {}
+    # Whitelist allowed table names to prevent SQL injection
+    allowed_tables = {'users', 'quizzes', 'quiz_questions', 'quiz_results', 'schema_version'}
     for table in tables:
-        data = conn.execute(f"SELECT * FROM {table}").fetchall()
-        db_data[table] = [dict(row) for row in data]
+        table_name = table['name']
+        if table_name in allowed_tables:
+            # Use parameterized query with identifier quoting for table names
+            query = f"SELECT * FROM '{table_name}'"
+            data = conn.execute(query).fetchall()
+            db_data[table_name] = [dict(row) for row in data]
 
     return render_template('admin.html', db_data=db_data)
 
@@ -250,12 +256,22 @@ def run_custom_query(query):
     try:
         conn = get_db()
         # Only allow SELECT queries for safety
-        if not query.lower().strip().startswith('select'):
+        query_stripped = query.lower().strip()
+        if not query_stripped.startswith('select'):
             raise ValueError("Only SELECT queries are allowed")
+            
+        # Additional validation to prevent dangerous operations
+        dangerous_keywords = ['drop', 'delete', 'update', 'insert', 'alter', 'create', 'pragma']
+        if any(keyword in query_stripped for keyword in dangerous_keywords):
+            raise ValueError("Query contains potentially dangerous keywords")
+            
+        # Limit query length to prevent abuse
+        if len(query) > 1000:
+            raise ValueError("Query too long")
             
         results = conn.execute(query).fetchall()
         # Convert results to list of dicts
-        columns = results[0].keys() if results else []
+        columns = list(results[0].keys()) if results else []
         data = [dict(row) for row in results]
         return {"columns": columns, "data": data}
         

@@ -1,6 +1,7 @@
 import os
 import datetime
 import json
+import subprocess
 from huey import SqliteHuey, crontab
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
@@ -38,9 +39,13 @@ def backup_to_drive():
         compressed_path = f'/tmp/db_backup_{timestamp}.gz'
         backup_file_name = f'db_backup_{timestamp}.gz'
 
-        # Backup and compress the database
-        os.system(f"sqlite3 {LOCAL_DB_PATH} 'VACUUM INTO \"/tmp/db_backup\"'")
-        os.system(f"gzip /tmp/db_backup")
+        # Backup and compress the database using subprocess for security
+        
+        # Use subprocess instead of os.system to prevent shell injection
+        subprocess.run([
+            'sqlite3', LOCAL_DB_PATH, 'VACUUM INTO "/tmp/db_backup"'
+        ], check=True)
+        subprocess.run(['gzip', '/tmp/db_backup'], check=True)
         os.rename('/tmp/db_backup.gz', compressed_path)  # Rename to include the timestamp
 
         # Upload to Google Drive
@@ -111,9 +116,10 @@ def restore_from_drive(restore_date=None):
                 status, done = downloader.next_chunk()
                 print(f"Download progress: {int(status.progress() * 100)}%")
 
-        # Decompress and restore
+        # Decompress and restore using subprocess for security
         print("Decompressing the backup...")
-        os.system(f"gunzip -c {file_path} > {LOCAL_RESTORE_PATH}")
+        with open(LOCAL_RESTORE_PATH, 'wb') as restore_file:
+            subprocess.run(['gunzip', '-c', file_path], stdout=restore_file, check=True)
         print(f"Backup restored successfully to: {LOCAL_RESTORE_PATH}")
     except Exception as e:
         print(f"Error during restore: {e}")
