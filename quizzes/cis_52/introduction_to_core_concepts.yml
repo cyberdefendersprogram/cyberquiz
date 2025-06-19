@@ -1,83 +1,81 @@
-name: "CIS 52 - Introduction to Core Cloud Security Concepts"
-quiz_id: "cis_52__introduction_to_core_concepts"
-class_name: "CIS 52"
+class_name: CIS 52
+id: cis_52__introduction_to_core_cloud_security_concepts
+name: CIS 52 - Introduction to Core Cloud Security Concepts
 questions:
-  - question: "What are the three main cloud service models defined by NIST?"
-    options:
-      - "A) Public, Private, Hybrid"
-      - "B) IaaS, PaaS, SaaS"
-      - "C) On-premises, Cloud, Multi-cloud"
-      - "D) Compute, Storage, Network"
-    answer: "B"
-
-  - question: "In the Shared Responsibility Model, who is responsible for securing the operating system in an IaaS deployment?"
-    options:
-      - "A) Cloud Service Provider (CSP)"
-      - "B) Customer"
-      - "C) Both CSP and Customer equally"
-      - "D) Third-party security vendor"
-    answer: "B"
-
-  - question: "Which cloud deployment model provides the highest level of control and customization?"
-    options:
-      - "A) Public Cloud"
-      - "B) Private Cloud"
-      - "C) Hybrid Cloud"
-      - "D) Community Cloud"
-    answer: "B"
-
-  - question: "What is the primary security concern with data stored in the cloud?"
-    options:
-      - "A) Data availability"
-      - "B) Data encryption at rest and in transit"
-      - "C) Data backup frequency"
-      - "D) Data compression algorithms"
-    answer: "B"
-
-  - question: "Which of the following is NOT one of the CIA triad principles in cloud security?"
-    options:
-      - "A) Confidentiality"
-      - "B) Integrity"
-      - "C) Availability"
-      - "D) Accountability"
-    answer: "D"
-
-  - question: "In a SaaS model, which layer is the customer primarily responsible for securing?"
-    options:
-      - "A) Physical infrastructure"
-      - "B) Application code"
-      - "C) User access and data"
-      - "D) Network infrastructure"
-    answer: "C"
-
-  - question: "What does IAM stand for in cloud security?"
-    options:
-      - "A) Infrastructure Access Management"
-      - "B) Identity and Access Management"
-      - "C) Information Asset Management"
-      - "D) Incident and Alert Management"
-    answer: "B"
-
-  - question: "Which cloud security threat involves attackers gaining unauthorized access through compromised credentials?"
-    options:
-      - "A) Data breaches"
-      - "B) Account hijacking"
-      - "C) Insecure APIs"
-      - "D) Denial of service"
-    answer: "B"
-
-  - question: "What is the principle of 'least privilege' in cloud security?"
-    options:
-      - "A) Giving users maximum access to reduce support requests"
-      - "B) Providing users only the minimum access required for their job functions"
-      - "C) Rotating user credentials on a monthly basis"
-      - "D) Using only privileged accounts for administrative tasks"
-    answer: "B"
-
-  - question: "Which security framework is commonly used for cloud security compliance and risk management?"
-    options:
-      - "A) OWASP Top 10"
-      - "B) ISO 27001"
-      - "C) CSA Cloud Controls Matrix (CCM)"
-      - "D) NIST Cybersecurity Framework"
-    answer: "C"
+- answer: B
+  options:
+  - A) Public, Private, Hybrid
+  - B) IaaS, PaaS, SaaS
+  - C) On-premises, Cloud, Multi-cloud
+  - D) Compute, Storage, Network
+  question: What are the three main cloud service models defined by NIST?
+- answer: B
+  options:
+  - A) Cloud Service Provider (CSP)
+  - B) Customer
+  - C) Both CSP and Customer equally
+  - D) Third-party security vendor
+  question: In the Shared Responsibility Model, who is responsible for securing the
+    operating system in an IaaS deployment?
+- answer: B
+  options:
+  - A) Public Cloud
+  - B) Private Cloud
+  - C) Hybrid Cloud
+  - D) Community Cloud
+  question: Which cloud deployment model provides the highest level of control and
+    customization?
+- answer: B
+  options:
+  - A) Data availability
+  - B) Data encryption at rest and in transit
+  - C) Data backup frequency
+  - D) Data compression algorithms
+  question: What is the primary security concern with data stored in the cloud?
+- answer: D
+  options:
+  - A) Confidentiality
+  - B) Integrity
+  - C) Availability
+  - D) Accountability
+  question: Which of the following is NOT one of the CIA triad principles in cloud
+    security?
+- answer: C
+  options:
+  - A) Physical infrastructure
+  - B) Application code
+  - C) User access and data
+  - D) Network infrastructure
+  question: In a SaaS model, which layer is the customer primarily responsible for
+    securing?
+- answer: B
+  options:
+  - A) Infrastructure Access Management
+  - B) Identity and Access Management
+  - C) Information Asset Management
+  - D) Incident and Alert Management
+  question: What does IAM stand for in cloud security?
+- answer: B
+  options:
+  - A) Data breaches
+  - B) Account hijacking
+  - C) Insecure APIs
+  - D) Denial of service
+  question: Which cloud security threat involves attackers gaining unauthorized access
+    through compromised credentials?
+- answer: B
+  options:
+  - A) Giving users maximum access to reduce support requests
+  - B) Providing users only the minimum access required for their job functions
+  - C) Rotating user credentials on a monthly basis
+  - D) Using only privileged accounts for administrative tasks
+  question: What is the principle of 'least privilege' in cloud security?
+- answer: C
+  options:
+  - A) OWASP Top 10
+  - B) ISO 27001
+  - C) CSA Cloud Controls Matrix (CCM)
+  - D) NIST Cybersecurity Framework
+  question: Which security framework is commonly used for cloud security compliance
+    and risk management?
+quiz_id: cis_52__introduction_to_core_concepts
