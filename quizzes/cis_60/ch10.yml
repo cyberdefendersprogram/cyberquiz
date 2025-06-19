@@ -1,72 +1,74 @@
-name: "Chapter 10"
+id: chapter_10
+name: Chapter 10
 questions:
-  - question: "What is the software that runs virtual machines called?"
-    options:
-      - "A) Hypervisor"
-      - "B) Virtualizer"
-      - "C) Emulator"
-      - "D) Simulator"
-    answer: "A"
-  - question: "Which type of hypervisor loads directly on physical hardware and does not require a separate OS?"
-    options:
-      - "A) Type 1"
-      - "B) Type 2"
-      - "C) Both Type 1 and Type 2"
-      - "D) Neither Type 1 nor Type 2"
-    answer: "A"
-  - question: "Which of the following is a widely used Type 2 hypervisor?"
-    options:
-      - "A) VMware vSphere"
-      - "B) Microsoft Hyper-V 2016"
-      - "C) Parallels Desktop"
-      - "D) XenProject XenServer"
-    answer: "C"
-  - question: "What is the first step in conducting an investigation with Type 2 Hypervisors?"
-    options:
-      - "A) Exporting all files associated with VMs"
-      - "B) Imaging the host machine"
-      - "C) Locating the virtualization software"
-      - "D) Recording the hash values of associated files"
-    answer: "B"
-  - question: "Why are live acquisitions of VMs often necessary?"
-    options:
-      - "A) To avoid imaging the host machine"
-      - "B) To exclude snapshots"
-      - "C) To include snapshots"
-      - "D) To speed up the investigation process"
-    answer: "C"
-  - question: "What does the acronym OOV stand for in the context of live acquisitions?"
-    options:
-      - "A) Order of Volatile Data"
-      - "B) Order of Virtual Machines"
-      - "C) Order of Operating Systems"
-      - "D) Out of Virtualization"
-    answer: "A"
-  - question: "What is the primary purpose of network forensics?"
-    options:
-      - "A) To secure a network"
-      - "B) To analyze virtual machines"
-      - "C) To monitor network traffic"
-      - "D) To investigate network attacks"
-    answer: "D"
-  - question: "Which of the following is a tool used for examining network traffic?"
-    options:
-      - "A) Mandiant Memoryze"
-      - "B) Wireshark"
-      - "C) FTK Imager"
-      - "D) OSForensics"
-    answer: "B"
-  - question: "What is a 'honeypot' in network security?"
-    options:
-      - "A) A tool for analyzing network packets"
-      - "B) A type of firewall"
-      - "C) A virtual machine used for forensics"
-      - "D) A computer that lures attackers"
-    answer: "D"
-  - question: "What is a Distributed Denial-of-Service (DDoS) attack?"
-    options:
-      - "A) An attack that exploits weaknesses before patches are available"
-      - "B) An attack that hides messages in files"
-      - "C) An attack that uses multiple machines to disrupt a network"
-      - "D) An attack that targets virtual machines"
-    answer: "C"
+- answer: A
+  options:
+  - A) Hypervisor
+  - B) Virtualizer
+  - C) Emulator
+  - D) Simulator
+  question: What is the software that runs virtual machines called?
+- answer: A
+  options:
+  - A) Type 1
+  - B) Type 2
+  - C) Both Type 1 and Type 2
+  - D) Neither Type 1 nor Type 2
+  question: Which type of hypervisor loads directly on physical hardware and does
+    not require a separate OS?
+- answer: C
+  options:
+  - A) VMware vSphere
+  - B) Microsoft Hyper-V 2016
+  - C) Parallels Desktop
+  - D) XenProject XenServer
+  question: Which of the following is a widely used Type 2 hypervisor?
+- answer: B
+  options:
+  - A) Exporting all files associated with VMs
+  - B) Imaging the host machine
+  - C) Locating the virtualization software
+  - D) Recording the hash values of associated files
+  question: What is the first step in conducting an investigation with Type 2 Hypervisors?
+- answer: C
+  options:
+  - A) To avoid imaging the host machine
+  - B) To exclude snapshots
+  - C) To include snapshots
+  - D) To speed up the investigation process
+  question: Why are live acquisitions of VMs often necessary?
+- answer: A
+  options:
+  - A) Order of Volatile Data
+  - B) Order of Virtual Machines
+  - C) Order of Operating Systems
+  - D) Out of Virtualization
+  question: What does the acronym OOV stand for in the context of live acquisitions?
+- answer: D
+  options:
+  - A) To secure a network
+  - B) To analyze virtual machines
+  - C) To monitor network traffic
+  - D) To investigate network attacks
+  question: What is the primary purpose of network forensics?
+- answer: B
+  options:
+  - A) Mandiant Memoryze
+  - B) Wireshark
+  - C) FTK Imager
+  - D) OSForensics
+  question: Which of the following is a tool used for examining network traffic?
+- answer: D
+  options:
+  - A) A tool for analyzing network packets
+  - B) A type of firewall
+  - C) A virtual machine used for forensics
+  - D) A computer that lures attackers
+  question: What is a 'honeypot' in network security?
+- answer: C
+  options:
+  - A) An attack that exploits weaknesses before patches are available
+  - B) An attack that hides messages in files
+  - C) An attack that uses multiple machines to disrupt a network
+  - D) An attack that targets virtual machines
+  question: What is a Distributed Denial-of-Service (DDoS) attack?

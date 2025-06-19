@@ -1,72 +1,79 @@
-name: "CIS 60 - Chapter 2: The Investigator's Office and Laboratory"
+id: cis_60__chapter_2_the_investigators_office_and_laboratory
+name: 'CIS 60 - Chapter 2: The Investigator''s Office and Laboratory'
 questions:
-  - question: "Which certification requires knowledge of digital forensics, malware analysis, incident response, and e-discovery?"
-    options:
-      - "A) EnCE"
-      - "B) ACE"
-      - "C) CCFP"
-      - "D) CFCE"
-    answer: "C"
-  - question: "The EnCase Certified Examiner (EnCE) certification is specific to the use and mastery of which forensics analysis tool?"
-    options:
-      - "A) AccessData Ultimate Toolkit"
-      - "B) EnCase"
-      - "C) Autopsy"
-      - "D) FTK"
-    answer: "B"
-  - question: "What does the AccessData Certified Examiner (ACE) certification exam include?"
-    options:
-      - "A) Knowledge base component only"
-      - "B) Practical skills component only"
-      - "C) Both a knowledge base and a practical skills component"
-      - "D) Application of legal principles"
-    answer: "C"
-  - question: "Which organization provides accreditation of crime and forensics labs worldwide?"
-    options:
-      - "A) FBI"
-      - "B) ANSI-ASQ National Accreditation Board (ANAB)"
-      - "C) HTCN"
-      - "D) IACIS"
-    answer: "B"
-  - question: "What is the minimum requirement for walls in a secure digital forensics lab?"
-    options:
-      - "A) Partition walls"
-      - "B) Half walls"
-      - "C) True floor-to-ceiling walls"
-      - "D) Movable walls"
-    answer: "C"
-  - question: "What type of facility is Electromagnetic Radiation (EMR) proofed?"
-    options:
-      - "A) Evidence lockers"
-      - "B) TEMPEST facilities"
-      - "C) Data recovery labs"
-      - "D) Workstations"
-    answer: "B"
-  - question: "How often should combination locks on evidence containers be changed?"
-    options:
-      - "A) Every year"
-      - "B) Every 3 months"
-      - "C) Every 6 months"
-      - "D) Only when a compromise is suspected"
-    answer: "C"
-  - question: "What should be included in an evidence log?"
-    options:
-      - "A) হচ্ছে evidence container ID"
-      - "B) Updates every time an evidence container is opened and closed"
-      - "C) হচ্ছে investigator's daily schedule"
-      - "D) হচ্ছে list of visitors to the lab"
-    answer: "B"
-  - question: "In a digital forensics lab, which type of workstation is ideally used for resource-heavy analysis tasks?"
-    options:
-      - "A) Basic workstations"
-      - "B) Multipurpose workstations"
-      - "C) Legacy systems"
-      - "D) Laptops"
-    answer: "B"
-  - question: "What is the purpose of a disaster recovery plan in a digital forensics lab?"
-    options:
-      - "A) To manage budgets"
-      - "B) To track software licenses"
-      - "C) To restore workstations and investigation files to their original condition"
-      - "D) To plan equipment upgrades"
-    answer: "C"
+- answer: C
+  options:
+  - A) EnCE
+  - B) ACE
+  - C) CCFP
+  - D) CFCE
+  question: Which certification requires knowledge of digital forensics, malware analysis,
+    incident response, and e-discovery?
+- answer: B
+  options:
+  - A) AccessData Ultimate Toolkit
+  - B) EnCase
+  - C) Autopsy
+  - D) FTK
+  question: The EnCase Certified Examiner (EnCE) certification is specific to the
+    use and mastery of which forensics analysis tool?
+- answer: C
+  options:
+  - A) Knowledge base component only
+  - B) Practical skills component only
+  - C) Both a knowledge base and a practical skills component
+  - D) Application of legal principles
+  question: What does the AccessData Certified Examiner (ACE) certification exam include?
+- answer: B
+  options:
+  - A) FBI
+  - B) ANSI-ASQ National Accreditation Board (ANAB)
+  - C) HTCN
+  - D) IACIS
+  question: Which organization provides accreditation of crime and forensics labs
+    worldwide?
+- answer: C
+  options:
+  - A) Partition walls
+  - B) Half walls
+  - C) True floor-to-ceiling walls
+  - D) Movable walls
+  question: What is the minimum requirement for walls in a secure digital forensics
+    lab?
+- answer: B
+  options:
+  - A) Evidence lockers
+  - B) TEMPEST facilities
+  - C) Data recovery labs
+  - D) Workstations
+  question: What type of facility is Electromagnetic Radiation (EMR) proofed?
+- answer: C
+  options:
+  - A) Every year
+  - B) Every 3 months
+  - C) Every 6 months
+  - D) Only when a compromise is suspected
+  question: How often should combination locks on evidence containers be changed?
+- answer: B
+  options:
+  - "A) \u09B9\u099A\u09CD\u099B\u09C7 evidence container ID"
+  - B) Updates every time an evidence container is opened and closed
+  - "C) \u09B9\u099A\u09CD\u099B\u09C7 investigator's daily schedule"
+  - "D) \u09B9\u099A\u09CD\u099B\u09C7 list of visitors to the lab"
+  question: What should be included in an evidence log?
+- answer: B
+  options:
+  - A) Basic workstations
+  - B) Multipurpose workstations
+  - C) Legacy systems
+  - D) Laptops
+  question: In a digital forensics lab, which type of workstation is ideally used
+    for resource-heavy analysis tasks?
+- answer: C
+  options:
+  - A) To manage budgets
+  - B) To track software licenses
+  - C) To restore workstations and investigation files to their original condition
+  - D) To plan equipment upgrades
+  question: What is the purpose of a disaster recovery plan in a digital forensics
+    lab?

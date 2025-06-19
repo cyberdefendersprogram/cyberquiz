@@ -1,42 +1,38 @@
-name: "Intrusion Detection Basics"
+id: intrusion_detection_basics
+name: Intrusion Detection Basics
 questions:
-  - question: "What is the primary function of an Intrusion Detection System (IDS)?"
-    options:
-      - "A) Monitor network traffic"
-      - "B) Block malicious IPs"
-      - "C) Encrypt data"
-      - "D) Backup data"
-    answer: "A"
-
-  - question: "Which type of IDS monitors network traffic in real-time?"
-    options:
-      - "A) NIDS"
-      - "B) HIDS"
-      - "C) EIDS"
-      - "D) FIDS"
-    answer: "A"
-
-  - question: "Which of the following is NOT a type of IDS?"
-    options:
-      - "A) Signature-based"
-      - "B) Anomaly-based"
-      - "C) Hybrid-based"
-      - "D) Encryption-based"
-    answer: "D"
-
-  - question: "What is a major limitation of signature-based IDS?"
-    options:
-      - "A) High accuracy"
-      - "B) Detects only known threats"
-      - "C) Difficult to configure"
-      - "D) High resource consumption"
-    answer: "B"
-
-  - question: "Which of these is a common tool used in intrusion detection?"
-    options:
-      - "A) Snort"
-      - "B) Wireshark"
-      - "C) SSL"
-      - "D) SQL"
-    answer: "A"
-
+- answer: A
+  options:
+  - A) Monitor network traffic
+  - B) Block malicious IPs
+  - C) Encrypt data
+  - D) Backup data
+  question: What is the primary function of an Intrusion Detection System (IDS)?
+- answer: A
+  options:
+  - A) NIDS
+  - B) HIDS
+  - C) EIDS
+  - D) FIDS
+  question: Which type of IDS monitors network traffic in real-time?
+- answer: D
+  options:
+  - A) Signature-based
+  - B) Anomaly-based
+  - C) Hybrid-based
+  - D) Encryption-based
+  question: Which of the following is NOT a type of IDS?
+- answer: B
+  options:
+  - A) High accuracy
+  - B) Detects only known threats
+  - C) Difficult to configure
+  - D) High resource consumption
+  question: What is a major limitation of signature-based IDS?
+- answer: A
+  options:
+  - A) Snort
+  - B) Wireshark
+  - C) SSL
+  - D) SQL
+  question: Which of these is a common tool used in intrusion detection?

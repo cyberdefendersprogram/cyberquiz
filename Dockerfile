@@ -23,7 +23,7 @@ WORKDIR /app
 COPY poetry.lock pyproject.toml /app/
 
 # Install Python dependencies using Poetry
-RUN poetry install --no-root --no-dev
+RUN poetry install --no-root
 
 # Copy the entire project into the container
 COPY . /app

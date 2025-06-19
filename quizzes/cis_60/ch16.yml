@@ -1,72 +1,79 @@
-name: "CIS 60 - Chapter 16"
+id: cis_60__chapter_16
+name: CIS 60 - Chapter 16
 questions:
-  - question: "What is the definition of ethics in the context of the chapter?"
-    options:
-      - "A) Standards applied by external forces"
-      - "B) Rules you internalize to measure your performance"
-      - "C) Laws governing professional conduct"
-      - "D) The lowest level of action to avoid liability"
-    answer: "B"
-  - question: "What is the role of expert witnesses in trials?"
-    options:
-      - "A) To present biased testimony"
-      - "B) To sway the jury with personal opinions"
-      - "C) To present unbiased, specialized, and technical evidence"
-      - "D) To avoid testifying in more than 50% of trials"
-    answer: "C"
-  - question: "What is a potential consequence of violating court rules or laws for an expert witness?"
-    options:
-      - "A) Increased compensation"
-      - "B) Disqualification"
-      - "C) Immunity from cross-examination"
-      - "D) Exemption from ethical codes"
-    answer: "B"
-  - question: "What is a common tactic some attorneys use to prevent opposing counsel from hiring expert witnesses?"
-    options:
-      - "A) Offering higher fees"
-      - "B) Contacting many experts as a ploy to disqualify them"
-      - "C) Encouraging experts to exaggerate their qualifications"
-      - "D) Filing frivolous lawsuits against experts"
-    answer: "B"
-  - question: "What is an example of an obvious ethical error for an expert witness?"
-    options:
-      - "A) Altering data"
-      - "B) Reporting work that was not done"
-      - "C) Ignoring contradictory data"
-      - "D) All of the above"
-    answer: "D"
-  - question: "According to the chapter, what should an expert witness do if they cannot complete an assignment in the allowed time?"
-    options:
-      - "A) Accept the assignment and work overtime"
-      - "B) Accept the assignment and delegate tasks to others"
-      - "C) Not accept the assignment"
-      - "D) Reach a conclusion before doing complete research"
-    answer: "C"
-  - question: "What is a key guideline provided by the International Society of Forensic Computer Examiners (ISFCE)?"
-    options:
-      - "A) Misrepresent training to appear more qualified"
-      - "B) Reveal confidential matters without permission"
-      - "C) Maintain the utmost objectivity in all forensic examinations"
-      - "D) Engage in actions that appear to be a conflict of interest"
-    answer: "C"
-  - question: "What does the International High Technology Crime Investigation Association (HTCIA) value in relation to digital information?"
-    options:
-      - "A) The concealment of truth to protect clients"
-      - "B) The use of any techniques, regardless of best practices"
-      - "C) The Truth uncovered within digital information"
-      - "D) The wrongful conviction of individuals"
-    answer: "C"
-  - question: "What is an ethical guideline for members of the American Psychological Association (APA) functioning as expert witnesses?"
-    options:
-      - "A) There are no specific ethical guidelines for psychologists"
-      - "B) The guidelines are limited to client interactions"
-      - "C) The guidelines include a section devoted to forensic activities"
-      - "D) Psychologists are exempt from ethical considerations in court"
-    answer: "C"
-  - question: "What is an ethical responsibility that an attorney owes to an expert witness?"
-    options:
-      - "A) To pressure the expert to alter their opinion"
-      - "B) To provide a fair statement of the case"
-      - "C) To limit the time for the expert to review evidence"
-      - "D) To withhold information that could help the expert"
-    answer: "B"
+- answer: B
+  options:
+  - A) Standards applied by external forces
+  - B) Rules you internalize to measure your performance
+  - C) Laws governing professional conduct
+  - D) The lowest level of action to avoid liability
+  question: What is the definition of ethics in the context of the chapter?
+- answer: C
+  options:
+  - A) To present biased testimony
+  - B) To sway the jury with personal opinions
+  - C) To present unbiased, specialized, and technical evidence
+  - D) To avoid testifying in more than 50% of trials
+  question: What is the role of expert witnesses in trials?
+- answer: B
+  options:
+  - A) Increased compensation
+  - B) Disqualification
+  - C) Immunity from cross-examination
+  - D) Exemption from ethical codes
+  question: What is a potential consequence of violating court rules or laws for an
+    expert witness?
+- answer: B
+  options:
+  - A) Offering higher fees
+  - B) Contacting many experts as a ploy to disqualify them
+  - C) Encouraging experts to exaggerate their qualifications
+  - D) Filing frivolous lawsuits against experts
+  question: What is a common tactic some attorneys use to prevent opposing counsel
+    from hiring expert witnesses?
+- answer: D
+  options:
+  - A) Altering data
+  - B) Reporting work that was not done
+  - C) Ignoring contradictory data
+  - D) All of the above
+  question: What is an example of an obvious ethical error for an expert witness?
+- answer: C
+  options:
+  - A) Accept the assignment and work overtime
+  - B) Accept the assignment and delegate tasks to others
+  - C) Not accept the assignment
+  - D) Reach a conclusion before doing complete research
+  question: According to the chapter, what should an expert witness do if they cannot
+    complete an assignment in the allowed time?
+- answer: C
+  options:
+  - A) Misrepresent training to appear more qualified
+  - B) Reveal confidential matters without permission
+  - C) Maintain the utmost objectivity in all forensic examinations
+  - D) Engage in actions that appear to be a conflict of interest
+  question: What is a key guideline provided by the International Society of Forensic
+    Computer Examiners (ISFCE)?
+- answer: C
+  options:
+  - A) The concealment of truth to protect clients
+  - B) The use of any techniques, regardless of best practices
+  - C) The Truth uncovered within digital information
+  - D) The wrongful conviction of individuals
+  question: What does the International High Technology Crime Investigation Association
+    (HTCIA) value in relation to digital information?
+- answer: C
+  options:
+  - A) There are no specific ethical guidelines for psychologists
+  - B) The guidelines are limited to client interactions
+  - C) The guidelines include a section devoted to forensic activities
+  - D) Psychologists are exempt from ethical considerations in court
+  question: What is an ethical guideline for members of the American Psychological
+    Association (APA) functioning as expert witnesses?
+- answer: B
+  options:
+  - A) To pressure the expert to alter their opinion
+  - B) To provide a fair statement of the case
+  - C) To limit the time for the expert to review evidence
+  - D) To withhold information that could help the expert
+  question: What is an ethical responsibility that an attorney owes to an expert witness?

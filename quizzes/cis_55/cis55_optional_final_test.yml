@@ -1,142 +1,152 @@
-name: "CIS 55 Final Test (Optional)"
+id: cis_55_final_test_optional
+name: CIS 55 Final Test (Optional)
 questions:
-  - question: "What are the three core principles of the CIA triad in cybersecurity?"
-    options:
-      - "A) Confidentiality, Integrity, Availability"
-      - "B) Control, Identification, Authentication"
-      - "C) Compliance, Investigation, Access"
-      - "D) Cybersecurity, Intelligence, Analysis"
-    answer: "A"
-  - question: "Which phase of penetration testing involves gathering as much information about the target as possible?"
-    options:
-      - "A) Exploitation"
-      - "B) Scanning"
-      - "C) Reconnaissance"
-      - "D) Reporting"
-    answer: "C"
-  - question: "Which tool is commonly used for network and web application vulnerability scanning?"
-    options:
-      - "A) Metasploit"
-      - "B) Nessus"
-      - "C) Wireshark"
-      - "D) John the Ripper"
-    answer: "B"
-  - question: "What type of penetration testing simulates an attacker with no prior knowledge of the target?"
-    options:
-      - "A) Internal Penetration Testing"
-      - "B) Targeted Testing"
-      - "C) Blind Penetration Testing"
-      - "D) External Penetration Testing"
-    answer: "C"
-  - question: "What is the role of a Computer Security Incident Response Team (CSIRT)?"
-    options:
-      - "A) Managing software updates"
-      - "B) Handling computer security incidents"
-      - "C) Conducting penetration testing"
-      - "D) Monitoring user activity"
-    answer: "B"
-  - question: "Which phase of the Incident Response Playbook involves identifying the root cause of an attack?"
-    options:
-      - "A) Containment"
-      - "B) Analysis"
-      - "C) Recovery"
-      - "D) Eradication"
-    answer: "B"
-  - question: "Which encryption algorithm replaced DES and is approved for classified data?"
-    options:
-      - "A) RSA"
-      - "B) Blowfish"
-      - "C) AES"
-      - "D) 3DES"
-    answer: "C"
-  - question: "Which legal act in the U.S. makes unauthorized access to computer systems illegal?"
-    options:
-      - "A) Electronic Communications Privacy Act (ECPA)"
-      - "B) Communications Assistance for Law Enforcement Act (CALEA)"
-      - "C) Computer Fraud and Abuse Act (CFAA)"
-      - "D) General Data Protection Regulation (GDPR)"
-    answer: "C"
-  - question: "What is the primary goal of threat modeling?"
-    options:
-      - "A) To identify vulnerabilities after an attack has occurred"
-      - "B) To assess security risks from an adversary’s perspective"
-      - "C) To replace traditional security testing"
-      - "D) To create firewalls for network protection"
-    answer: "B"
-  - question: "What is the purpose of the Nmap tool?"
-    options:
-      - "A) To encrypt sensitive files"
-      - "B) To scan networks and discover live hosts, open ports, and services"
-      - "C) To detect phishing emails"
-      - "D) To manage firewall configurations"
-    answer: "B"
-  - question: "What is the primary use of SQLMap?"
-    options:
-      - "A) To detect and exploit SQL injection vulnerabilities"
-      - "B) To perform network scanning"
-      - "C) To generate encryption keys"
-      - "D) To create secure web applications"
-    answer: "A"
-  - question: "Which penetration testing tool is used for exploitation and post-exploitation activities?"
-    options:
-      - "A) Nessus"
-      - "B) Wireshark"
-      - "C) Metasploit"
-      - "D) Snort"
-    answer: "C"
-  - question: "What was the initial attack vector in the 2022 Uber hack?"
-    options:
-      - "A) SQL injection"
-      - "B) Social engineering and MFA fatigue"
-      - "C) Zero-day vulnerability"
-      - "D) Brute force attack"
-    answer: "B"
-  - question: "What makes Shodan different from traditional search engines?"
-    options:
-      - "A) It scans webpages for keywords"
-      - "B) It scans the internet for device and service banners"
-      - "C) It only searches social media"
-      - "D) It focuses on image recognition"
-    answer: "B"
-  - question: "What type of attack involves a malicious website causing a user's browser to perform unwanted actions on a trusted website?"
-    options:
-      - "A) Cross-Site Scripting (XSS)"
-      - "B) SQL Injection"
-      - "C) Cross-Site Request Forgery (CSRF)"
-      - "D) Denial of Service (DoS)"
-    answer: "C"
-  - question: "What is the shared responsibility model in AWS?"
-    options:
-      - "A) AWS is fully responsible for securing customer data."
-      - "B) Customers are fully responsible for securing the AWS infrastructure."
-      - "C) AWS and customers share the responsibility, with AWS securing the infrastructure and customers securing their own applications and data."
-      - "D) There is no shared responsibility model in AWS."
-    answer: "C"
-  - question: "What is a common vulnerability associated with Amazon S3 buckets?"
-    options:
-      - "A) Weak passwords for accessing the buckets."
-      - "B) Incorrectly configured buckets allowing public write access."
-      - "C) Using outdated versions of the S3 software."
-      - "D) Lack of encryption for data stored in the buckets."
-    answer: "B"
-  - question: "What is Mimikatz primarily used for?"
-    options:
-      - "A) Network scanning"
-      - "B) Packet sniffing"
-      - "C) Stealing authentication credentials"
-      - "D) Web application testing"
-    answer: "C"
-  - question: "What is the primary goal of a Cross-Site Scripting (XSS) attack?"
-    options:
-      - "A) To crash the web server"
-      - "B) To steal client cookies or sensitive information"
-      - "C) To modify data on the server"
-      - "D) To redirect users to a malicious website"
-    answer: "B"
-  - question: "What is a common technique for jailbreaking LLMs?"
-    options:
-      - "A) Exploiting buffer overflows"
-      - "B) Repeating a sequence of prompts"
-      - "C) Injecting malicious code into the training data"
-      - "D) Using social engineering to gain access to the model"
-    answer: "B"
+- answer: A
+  options:
+  - A) Confidentiality, Integrity, Availability
+  - B) Control, Identification, Authentication
+  - C) Compliance, Investigation, Access
+  - D) Cybersecurity, Intelligence, Analysis
+  question: What are the three core principles of the CIA triad in cybersecurity?
+- answer: C
+  options:
+  - A) Exploitation
+  - B) Scanning
+  - C) Reconnaissance
+  - D) Reporting
+  question: Which phase of penetration testing involves gathering as much information
+    about the target as possible?
+- answer: B
+  options:
+  - A) Metasploit
+  - B) Nessus
+  - C) Wireshark
+  - D) John the Ripper
+  question: Which tool is commonly used for network and web application vulnerability
+    scanning?
+- answer: C
+  options:
+  - A) Internal Penetration Testing
+  - B) Targeted Testing
+  - C) Blind Penetration Testing
+  - D) External Penetration Testing
+  question: What type of penetration testing simulates an attacker with no prior knowledge
+    of the target?
+- answer: B
+  options:
+  - A) Managing software updates
+  - B) Handling computer security incidents
+  - C) Conducting penetration testing
+  - D) Monitoring user activity
+  question: What is the role of a Computer Security Incident Response Team (CSIRT)?
+- answer: B
+  options:
+  - A) Containment
+  - B) Analysis
+  - C) Recovery
+  - D) Eradication
+  question: Which phase of the Incident Response Playbook involves identifying the
+    root cause of an attack?
+- answer: C
+  options:
+  - A) RSA
+  - B) Blowfish
+  - C) AES
+  - D) 3DES
+  question: Which encryption algorithm replaced DES and is approved for classified
+    data?
+- answer: C
+  options:
+  - A) Electronic Communications Privacy Act (ECPA)
+  - B) Communications Assistance for Law Enforcement Act (CALEA)
+  - C) Computer Fraud and Abuse Act (CFAA)
+  - D) General Data Protection Regulation (GDPR)
+  question: Which legal act in the U.S. makes unauthorized access to computer systems
+    illegal?
+- answer: B
+  options:
+  - A) To identify vulnerabilities after an attack has occurred
+  - "B) To assess security risks from an adversary\u2019s perspective"
+  - C) To replace traditional security testing
+  - D) To create firewalls for network protection
+  question: What is the primary goal of threat modeling?
+- answer: B
+  options:
+  - A) To encrypt sensitive files
+  - B) To scan networks and discover live hosts, open ports, and services
+  - C) To detect phishing emails
+  - D) To manage firewall configurations
+  question: What is the purpose of the Nmap tool?
+- answer: A
+  options:
+  - A) To detect and exploit SQL injection vulnerabilities
+  - B) To perform network scanning
+  - C) To generate encryption keys
+  - D) To create secure web applications
+  question: What is the primary use of SQLMap?
+- answer: C
+  options:
+  - A) Nessus
+  - B) Wireshark
+  - C) Metasploit
+  - D) Snort
+  question: Which penetration testing tool is used for exploitation and post-exploitation
+    activities?
+- answer: B
+  options:
+  - A) SQL injection
+  - B) Social engineering and MFA fatigue
+  - C) Zero-day vulnerability
+  - D) Brute force attack
+  question: What was the initial attack vector in the 2022 Uber hack?
+- answer: B
+  options:
+  - A) It scans webpages for keywords
+  - B) It scans the internet for device and service banners
+  - C) It only searches social media
+  - D) It focuses on image recognition
+  question: What makes Shodan different from traditional search engines?
+- answer: C
+  options:
+  - A) Cross-Site Scripting (XSS)
+  - B) SQL Injection
+  - C) Cross-Site Request Forgery (CSRF)
+  - D) Denial of Service (DoS)
+  question: What type of attack involves a malicious website causing a user's browser
+    to perform unwanted actions on a trusted website?
+- answer: C
+  options:
+  - A) AWS is fully responsible for securing customer data.
+  - B) Customers are fully responsible for securing the AWS infrastructure.
+  - C) AWS and customers share the responsibility, with AWS securing the infrastructure
+    and customers securing their own applications and data.
+  - D) There is no shared responsibility model in AWS.
+  question: What is the shared responsibility model in AWS?
+- answer: B
+  options:
+  - A) Weak passwords for accessing the buckets.
+  - B) Incorrectly configured buckets allowing public write access.
+  - C) Using outdated versions of the S3 software.
+  - D) Lack of encryption for data stored in the buckets.
+  question: What is a common vulnerability associated with Amazon S3 buckets?
+- answer: C
+  options:
+  - A) Network scanning
+  - B) Packet sniffing
+  - C) Stealing authentication credentials
+  - D) Web application testing
+  question: What is Mimikatz primarily used for?
+- answer: B
+  options:
+  - A) To crash the web server
+  - B) To steal client cookies or sensitive information
+  - C) To modify data on the server
+  - D) To redirect users to a malicious website
+  question: What is the primary goal of a Cross-Site Scripting (XSS) attack?
+- answer: B
+  options:
+  - A) Exploiting buffer overflows
+  - B) Repeating a sequence of prompts
+  - C) Injecting malicious code into the training data
+  - D) Using social engineering to gain access to the model
+  question: What is a common technique for jailbreaking LLMs?

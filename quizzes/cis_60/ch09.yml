@@ -1,72 +1,76 @@
-name: "Chapter 9"
+id: chapter_9
+name: Chapter 9
 questions:
-  - question: "What does 'scope creep' refer to in the context of a digital forensics investigation?"
-    options:
-      - "A) The use of specialized tools"
-      - "B) The expansion of an investigation beyond its original scope"
-      - "C) The reduction in the amount of data to process"
-      - "D) The process of validating data"
-    answer: "B"
-  - question: "Which of the following is a key step in a digital forensics investigation?"
-    options:
-      - "A) Ignoring the condition of seized computer hardware"
-      - "B) Using target drives without wiping them"
-      - "C) Maintaining control of all evidence and findings"
-      - "D) Skipping the examination of password-protected files"
-    answer: "C"
-  - question: "What is the purpose of hashing image files in digital forensics?"
-    options:
-      - "A) To hide data"
-      - "B) To ensure data integrity"
-      - "C) To change file extensions"
-      - "D) To encrypt files"
-    answer: "B"
-  - question: "Which of the following tools is commonly used for validating data in digital forensics?"
-    options:
-      - "A) Microsoft Word"
-      - "B) Hexadecimal editors"
-      - "C) DiskPart"
-      - "D) Steganography tools"
-    answer: "B"
-  - question: "What technique involves changing or manipulating a file to conceal information?"
-    options:
-      - "A) Hashing"
-      - "B) Data hiding"
-      - "C) Steganalysis"
-      - "D) Digital watermarking"
-    answer: "B"
-  - question: "Which method can be used to hide partitions in Windows?"
-    options:
-      - "A) Changing file extensions"
-      - "B) Using the 'Hidden' file attribute"
-      - "C) Using the 'diskpart remove letter' command"
-      - "D) Bit-shifting"
-    answer: "C"
-  - question: "What is the term for detecting and analyzing steganography files?"
-    options:
-      - "A) Cryptanalysis"
-      - "B) Hashing"
-      - "C) Steganalysis"
-      - "D) Watermarking"
-    answer: "C"
-  - question: "Which of the following is a password recovery method?"
-    options:
-      - "A) Key escrow"
-      - "B) Bit-shifting"
-      - "C) Dictionary attack"
-      - "D) Steganography"
-    answer: "C"
-  - question: "What type of attack uses every possible letter, number, and character to guess a password?"
-    options:
-      - "A) Dictionary attack"
-      - "B) Rainbow table attack"
-      - "C) Brute-force attack"
-      - "D) Salting attack"
-    answer: "C"
-  - question: "What is a file containing hash values for every possible password called?"
-    options:
-      - "A) Dictionary"
-      - "B) Rainbow table"
-      - "C) Key escrow"
-      - "D) Hash index"
-    answer: "B"
+- answer: B
+  options:
+  - A) The use of specialized tools
+  - B) The expansion of an investigation beyond its original scope
+  - C) The reduction in the amount of data to process
+  - D) The process of validating data
+  question: What does 'scope creep' refer to in the context of a digital forensics
+    investigation?
+- answer: C
+  options:
+  - A) Ignoring the condition of seized computer hardware
+  - B) Using target drives without wiping them
+  - C) Maintaining control of all evidence and findings
+  - D) Skipping the examination of password-protected files
+  question: Which of the following is a key step in a digital forensics investigation?
+- answer: B
+  options:
+  - A) To hide data
+  - B) To ensure data integrity
+  - C) To change file extensions
+  - D) To encrypt files
+  question: What is the purpose of hashing image files in digital forensics?
+- answer: B
+  options:
+  - A) Microsoft Word
+  - B) Hexadecimal editors
+  - C) DiskPart
+  - D) Steganography tools
+  question: Which of the following tools is commonly used for validating data in digital
+    forensics?
+- answer: B
+  options:
+  - A) Hashing
+  - B) Data hiding
+  - C) Steganalysis
+  - D) Digital watermarking
+  question: What technique involves changing or manipulating a file to conceal information?
+- answer: C
+  options:
+  - A) Changing file extensions
+  - B) Using the 'Hidden' file attribute
+  - C) Using the 'diskpart remove letter' command
+  - D) Bit-shifting
+  question: Which method can be used to hide partitions in Windows?
+- answer: C
+  options:
+  - A) Cryptanalysis
+  - B) Hashing
+  - C) Steganalysis
+  - D) Watermarking
+  question: What is the term for detecting and analyzing steganography files?
+- answer: C
+  options:
+  - A) Key escrow
+  - B) Bit-shifting
+  - C) Dictionary attack
+  - D) Steganography
+  question: Which of the following is a password recovery method?
+- answer: C
+  options:
+  - A) Dictionary attack
+  - B) Rainbow table attack
+  - C) Brute-force attack
+  - D) Salting attack
+  question: What type of attack uses every possible letter, number, and character
+    to guess a password?
+- answer: B
+  options:
+  - A) Dictionary
+  - B) Rainbow table
+  - C) Key escrow
+  - D) Hash index
+  question: What is a file containing hash values for every possible password called?

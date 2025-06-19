@@ -1,42 +1,38 @@
-name: "Network Security Basics"
+id: network_security_basics
+name: Network Security Basics
 questions:
-  - question: "Which layer in the OSI model is responsible for IP addressing?"
-    options:
-      - "A) Network"
-      - "B) Transport"
-      - "C) Session"
-      - "D) Application"
-    answer: "A"
-
-  - question: "What protocol is primarily used for secure web traffic?"
-    options:
-      - "A) HTTP"
-      - "B) FTP"
-      - "C) SMTP"
-      - "D) HTTPS"
-    answer: "D"
-
-  - question: "Which of these devices is commonly used to filter traffic in a network?"
-    options:
-      - "A) Firewall"
-      - "B) Router"
-      - "C) Switch"
-      - "D) Hub"
-    answer: "A"
-
-  - question: "Which protocol is used to resolve domain names to IP addresses?"
-    options:
-      - "A) DHCP"
-      - "B) DNS"
-      - "C) FTP"
-      - "D) ARP"
-    answer: "B"
-
-  - question: "What is the purpose of a VPN in network security?"
-    options:
-      - "A) To provide a secure connection over the internet"
-      - "B) To monitor traffic for intrusions"
-      - "C) To encrypt email communications"
-      - "D) To route traffic between networks"
-    answer: "A"
-
+- answer: A
+  options:
+  - A) Network
+  - B) Transport
+  - C) Session
+  - D) Application
+  question: Which layer in the OSI model is responsible for IP addressing?
+- answer: D
+  options:
+  - A) HTTP
+  - B) FTP
+  - C) SMTP
+  - D) HTTPS
+  question: What protocol is primarily used for secure web traffic?
+- answer: A
+  options:
+  - A) Firewall
+  - B) Router
+  - C) Switch
+  - D) Hub
+  question: Which of these devices is commonly used to filter traffic in a network?
+- answer: B
+  options:
+  - A) DHCP
+  - B) DNS
+  - C) FTP
+  - D) ARP
+  question: Which protocol is used to resolve domain names to IP addresses?
+- answer: A
+  options:
+  - A) To provide a secure connection over the internet
+  - B) To monitor traffic for intrusions
+  - C) To encrypt email communications
+  - D) To route traffic between networks
+  question: What is the purpose of a VPN in network security?

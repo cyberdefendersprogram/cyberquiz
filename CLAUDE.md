@@ -29,7 +29,10 @@ poetry run huey_consumer.py tasks.huey
 docker-compose up --build
 
 # Testing
-# Add your test commands here when available
+poetry run pytest
+
+# Docker Testing
+docker compose -f docker-compose.test.yml run --rm test
 ```
 
 ## Project Structure

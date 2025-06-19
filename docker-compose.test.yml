@@ -1,0 +1,13 @@
+services:
+  test:
+    build: .
+    environment:
+      TESTING: "true"
+      SECRET_KEY: "test-secret-key"
+      DATABASE_NAME: ":memory:"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: poetry run pytest -v
+    tty: true
+    stdin_open: true

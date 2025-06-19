@@ -1,42 +1,41 @@
-name: "CIS 55 - Class 2: Incident Response & Cryptography"
+id: cis_55__class_2_incident_response__cryptography
+name: 'CIS 55 - Class 2: Incident Response & Cryptography'
 questions:
-  - question: "What is the role of a Computer Security Incident Response Team (CSIRT)?"
-    options:
-      - "A) Managing software updates"
-      - "B) Handling computer security incidents"
-      - "C) Conducting penetration testing"
-      - "D) Monitoring user activity"
-    answer: "B"
-
-  - question: "Which phase of the Incident Response Playbook involves identifying the root cause of an attack?"
-    options:
-      - "A) Containment"
-      - "B) Analysis"
-      - "C) Recovery"
-      - "D) Eradication"
-    answer: "B"
-
-  - question: "Which encryption algorithm replaced DES and is approved for classified data?"
-    options:
-      - "A) RSA"
-      - "B) Blowfish"
-      - "C) AES"
-      - "D) 3DES"
-    answer: "C"
-
-  - question: "What is the primary goal of cryptography?"
-    options:
-      - "A) To make data storage more efficient"
-      - "B) To prevent unauthorized access and ensure secure communication"
-      - "C) To speed up network transmission"
-      - "D) To create proprietary encryption systems"
-    answer: "B"
-
-  - question: "Which legal act in the U.S. makes unauthorized access to computer systems illegal?"
-    options:
-      - "A) Electronic Communications Privacy Act (ECPA)"
-      - "B) Communications Assistance for Law Enforcement Act (CALEA)"
-      - "C) Computer Fraud and Abuse Act (CFAA)"
-      - "D) General Data Protection Regulation (GDPR)"
-    answer: "C"
-
+- answer: B
+  options:
+  - A) Managing software updates
+  - B) Handling computer security incidents
+  - C) Conducting penetration testing
+  - D) Monitoring user activity
+  question: What is the role of a Computer Security Incident Response Team (CSIRT)?
+- answer: B
+  options:
+  - A) Containment
+  - B) Analysis
+  - C) Recovery
+  - D) Eradication
+  question: Which phase of the Incident Response Playbook involves identifying the
+    root cause of an attack?
+- answer: C
+  options:
+  - A) RSA
+  - B) Blowfish
+  - C) AES
+  - D) 3DES
+  question: Which encryption algorithm replaced DES and is approved for classified
+    data?
+- answer: B
+  options:
+  - A) To make data storage more efficient
+  - B) To prevent unauthorized access and ensure secure communication
+  - C) To speed up network transmission
+  - D) To create proprietary encryption systems
+  question: What is the primary goal of cryptography?
+- answer: C
+  options:
+  - A) Electronic Communications Privacy Act (ECPA)
+  - B) Communications Assistance for Law Enforcement Act (CALEA)
+  - C) Computer Fraud and Abuse Act (CFAA)
+  - D) General Data Protection Regulation (GDPR)
+  question: Which legal act in the U.S. makes unauthorized access to computer systems
+    illegal?
